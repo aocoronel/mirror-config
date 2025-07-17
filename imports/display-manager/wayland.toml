@@ -1,0 +1,12 @@
+[managers.system]
+items = [
+  "cliphist",
+  "fuzzel",
+  "grim",
+  "rofi-wayland",
+  "slurp",
+  "swayimg",
+  "swww",
+  "wf-recorder",
+  "wttrbar",
+]

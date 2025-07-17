@@ -1,0 +1,18 @@
+[managers.system]
+items = [
+  "adwaita-icon-theme",
+  "adwaita-qt",
+  # "clipcat",
+  "dconf",
+  "feh",
+  "flameshot",
+  "libnotify",
+  "networkmanagerapplet",
+  "nsxiv",
+  "redshift",
+  "sxhkd",
+  "xclip",
+  "xclip",
+  "xdotool",
+  "zenity",
+]

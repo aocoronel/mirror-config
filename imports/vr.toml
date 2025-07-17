@@ -1,0 +1,11 @@
+[managers.system]
+items = [
+  "monado",
+  "opencomposite",
+  "envision-xr-git",
+  "libudev0-shim",
+  "wlx-overlay-s-git",
+]
+
+[managers.flatpak]
+items = ["io.github.wivrn.wivrn"]

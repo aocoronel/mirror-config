@@ -1,0 +1,7 @@
+{
+  "include": [
+    "$HOME/.config/waybar/profiles/default-mechabar.jsonc",
+    "$HOME/.config/waybar/modules/nixos.jsonc",
+    "$HOME/.config/waybar/modules/desktop.jsonc",
+  ],
+}

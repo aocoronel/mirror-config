@@ -1,0 +1,9 @@
+add = "sudo pacman -S #:?"
+remove = "sudo pacman -Rns #:?"
+
+plural_name = "pacman"
+
+hook_name = "pacman"
+
+[config]
+many_args = true

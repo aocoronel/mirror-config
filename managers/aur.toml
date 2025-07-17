@@ -1,0 +1,11 @@
+add = "paru -S #:?"
+remove = "paru -Rns #:?"
+sync = "paru -Syy"
+upgrade = "paru -Syu"
+
+plural_name = "aur"
+
+hook_name = "aur"
+
+[config]
+many_args = true

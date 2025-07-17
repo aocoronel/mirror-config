@@ -1,0 +1,9 @@
+[managers.system]
+items = [
+  "autoconf",
+  "automake",
+  # "cmake",
+  "gcc",
+  "gnumake",
+  "libtool",
+]
