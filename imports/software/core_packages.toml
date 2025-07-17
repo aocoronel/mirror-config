@@ -16,6 +16,14 @@ items = [
   "xfsdump",
   "xfsprogs",
 
+  "libnotify",
+  "notification-daemon",
+  "brightnessctl",
+  "xdg-desktop-portal",
+  "xdg-desktop-portal-gtk",
+  "xdg-utils",
+  "flatpak-xdg-utils",
+
   "zip",
   "gvfs",
   "mtpfs",
@@ -105,7 +113,6 @@ items = [
   "scrcpy",
   "rofi-calc",
   "rofi",
-  # "networkmanager-openvpn",
   "fuzzel",
   "swayimg",
   "grim",
@@ -239,11 +246,4 @@ items = [
 ]
 
 [managers.paru]
-items = [
-  "cava",
-  "freetube-bin",
-  "mutt-wizard",
-  "oh-my-posh",
-  "zen-browser-bin",
-  "rose-pine-gtk-theme",
-]
+items = ["cava", "freetube-bin", "mutt-wizard", "oh-my-posh", "zen-browser-bin"]

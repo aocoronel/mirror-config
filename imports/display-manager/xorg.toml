@@ -1,6 +1,5 @@
 [managers.system]
 items = [
-  "adwaita-icon-theme",
   "adwaita-qt",
   # "clipcat",
   "dconf",

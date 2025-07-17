@@ -1,0 +1,13 @@
+[managers.system]
+items = [
+  "bridge-utils",
+  "dnsmasq",
+  "dosfstools",
+  "libvirt",
+  "lxc",
+  "qemu-full",
+  "swtpm",
+  "uefi-run",
+  "virt-manager",
+  "virt-viewer",
+]
