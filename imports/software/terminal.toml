@@ -1,0 +1,8 @@
+[managers.system]
+items = [
+  "alacritty",
+  # "foot",
+  # "ghostty",
+  # "kitty",
+  # "xterm",
+]

@@ -1,5 +1,5 @@
 [managers.system]
 items = ["docker", "docker-compose", "lazydocker"]
 
-[managers.group]
+[managers.systemd]
 items = ["docker"]

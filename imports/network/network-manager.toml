@@ -3,3 +3,6 @@ items = [
   "networkmanager",
   # "network-manager-applet",
 ]
+
+[managers.systemd]
+items = ["NetworkManager"]

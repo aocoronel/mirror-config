@@ -1,0 +1,2 @@
+[managers.system]
+items = ["tomb", "pass", "pass-tomb", "pass-otp", "zbar", "steghide"]

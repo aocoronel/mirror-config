@@ -1,0 +1,7 @@
+[managers.system]
+items = [
+  "isync",
+  "mutt-wizard",
+  "neomutt",
+  # "thunderbird",
+]

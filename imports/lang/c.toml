@@ -2,6 +2,7 @@
 items = [
   "autoconf",
   "automake",
+  "clang",
   # "cmake",
   "gcc",
   "gnumake",

@@ -1,4 +1,4 @@
 imports = ["display-manager/xorg"]
 
 [managers.system]
-items = ["qtile", "python-psutil"]
+items = ["kitty", "qtile", "python-psutil"]

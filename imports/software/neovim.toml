@@ -1,0 +1,4 @@
+imports = ["software/lsp"]
+
+[managers.system]
+items = ["neovim", "neovide"]

@@ -1,0 +1,5 @@
+imports = [
+  "software/cli",
+  # "software/proprietary/obsidian",
+  # "software/proprietary/steam",
+]

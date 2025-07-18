@@ -1,2 +1,5 @@
 [managers.system]
 items = ["ly"]
+
+[managers.systemd]
+items = ["ly"]

@@ -11,3 +11,6 @@ items = [
   "virt-manager",
   "virt-viewer",
 ]
+
+[managers.systemd]
+items = ["libvirtd"]

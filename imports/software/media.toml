@@ -1,0 +1,6 @@
+[managers.system]
+items = [
+  "gimp",
+  # "obs-studio"
+  # "shotcut"
+]

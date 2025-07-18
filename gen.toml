@@ -53,8 +53,14 @@ items = [
   # "foot",
 ]
 
-[managers.flatpak]
+[managers.aur]
+items = ["cava", "freetube-bin", "mutt-wizard", "oh-my-posh", "zen-browser-bin"]
+
+[managers.go]
 items = []
+
+[managers.flatpak]
+items = ["io.freetubeapp.FreeTube", "app.zen_browser.zen"]
 
 [managers.cargo]
 items = []
