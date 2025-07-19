@@ -1,2 +1,10 @@
 [managers.system]
-items = ["tomb", "pass", "pass-tomb", "pass-otp", "zbar", "steghide"]
+items = [
+  # "gocryptfs"
+  "pass",
+  "pass-otp",
+  "pass-tomb",
+  "steghide",
+  "tomb",
+  "zbar",
+]

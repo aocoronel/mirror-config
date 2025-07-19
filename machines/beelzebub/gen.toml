@@ -1,18 +1,10 @@
-imports = [
-  # "intensive_apps",
-]
+imports = []
 
 [managers.system]
-items = [
-  # "auto-cpufreq",
-]
+items = []
 
 [managers.flatpak]
-items = [
-  # "com.github.tchx84.Flatseal",
-]
+items = []
 
 [managers.cargo]
-items = [
-  # "bacon",
-]
+items = []

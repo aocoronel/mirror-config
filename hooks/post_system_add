@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+if command -v flatpak &>/dev/null; then
+  flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo || exit 1
+fi
+
+if command -v rustup &>/dev/null; then
+  rustup default stable || exit 1
+fi

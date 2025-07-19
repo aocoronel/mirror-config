@@ -1,4 +1,4 @@
-imports = ["display-manager/wayland"]
+imports = ["software/wayland"]
 
 [managers.system]
 items = [

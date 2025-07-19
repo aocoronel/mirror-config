@@ -1,62 +1,8 @@
 #!/usr/bin/env bash
 
-log_fatal() {
-  rebos api echo fatal "$1"
-}
-
-log_info() {
-  rebos api echo info "$1"
-}
-
-log_success() {
-  rebos api echo success "$1"
-}
-
-log_warning() {
-  rebos api echo warning "$1"
-}
-
-die() {
-  log_fatal "$1"
-  exit 1
-}
-
-attxtf_root() {
-  sudo bash -c "cat '$1' | grep '$2' || echo '$2' >> '$1'" || return 1
-}
-
-sysctl_boot() {
-  attxtf_root "/etc/sysctl.d/99-sysctl.conf" "$1" || return 1
-}
+source "$(dirname "$(realpath "$0")")/rebos-api"
 
 system_files_path="$HOME/.config/rebos/system_files"
-
-sudo cp "$system_files_path/environment" /etc/environment || exit 1
-ln -sf "$system_files_path/.tmuxprofile" "$HOME/.tmuxprofile" || exit 1
-ln -sf "$system_files_path/.gtkrc-2.0" "$HOME/.gtkrc-2.0" || exit 1
-ln -sf "$system_files_path/mimeapps.list" "$HOME/.config/mimeapps.list" || exit 1
-ln -sf "$system_files_path/mimeapps.list" "$HOME/.local/share/applications/mimeapps.list" || exit 1
-ln -sf "$system_files_path/gpg-agent.conf" "$HOME/.gnupg/gpg-agent.conf" || exit 1
-sed "s|username|$(whoami)|" "$system_files_path/user-dirs.dirs" >"$HOME/.config/user-dirs.dirs"
-
-if [[ -f /etc/libvirt/qemu.conf ]]; then
-  log_info "Overwriting 'qemu.conf' file..."
-
-  sudo cp "$system_files_path/qemu.conf" "/etc/libvirt/qemu.conf" || exit 1
-
-  log_success "Successfully overwrote 'qemu.conf' file!"
-fi
-
-if [[ -f /usr/bin/helix ]]; then
-  command -v hx >/dev/null 2>&1 || sudo ln -s /usr/bin/helix /usr/local/bin/hx
-fi
-
-if pacman -Qs firewalld >/dev/null 2>&1; then
-  sudo systemctl disable firewalld --now
-  sudo pacman -Rns firewalld
-  sudo pacman -S ufw
-  sudo systemctl enable ufw --now
-fi
 
 function add-groups() {
   for cmd in "$@"; do
@@ -64,50 +10,65 @@ function add-groups() {
   done
 }
 
-if ! grep 1 "$HOME/.cache/rebos-group" &>/dev/null; then
-  add-groups networkmanager wheel input dialout video render video && echo 1 >"$HOME/.cache/rebos-group"
-fi
+function setup_files() {
+  ln -sf "$system_files_path/gpg-agent.conf" "$HOME/.gnupg/gpg-agent.conf" || exit 1
+  ln -sf "$system_files_path/.gtkrc-2.0" "$HOME/.gtkrc-2.0" || exit 1
+  ln -sf "$system_files_path/mimeapps.list" "$HOME/.config/mimeapps.list" || exit 1
+  ln -sf "$system_files_path/mimeapps.list" "$HOME/.local/share/applications/mimeapps.list" || exit 1
+  ln -sf "$system_files_path/.tmuxprofile" "$HOME/.tmuxprofile" || exit 1
+  sed "s|username|$(whoami)|" "$system_files_path/user-dirs.dirs" >"$HOME/.config/user-dirs.dirs"
+  sudo cp "$system_files_path/environment" /etc/environment || exit 1
+}
 
-if pacman -Qs virt-manager >/dev/null 2>&1; then
-  add-groups libvirt kvm
-  sudo systemctl enable libvirtd.service --now
-  sudo virsh net-autostart default >/dev/null
-fi
-
-if pacman -Qs auto-cpufreq >/dev/null 2>&1; then
-  sudo systemctl enable auto-cpufreq --now
-fi
-
-if [[ "$(cat /proc/sys/kernel/sysrq)" == "1" ]]; then
-  log_info "SysRQ already enabled..."
-else
-  log_info "Enabling SysRQ..."
-  sysctl_boot "kernel.sysrq = 1" || die "Failed to enable SysRQ! (For Every Boot)"
-  sudo sysctl kernel.sysrq=1 >/dev/null || log_warning "Failed to start SysRQ! (For Just This Session)"
-fi
-
-if [[ ! -d "$HOME/dotfiles/" ]]; then
-  git clone https://codeberg.org/aocoronel/dotfiles && {
-    cd "$HOME/dotfiles/" || return 1
-    stow -R .
-    cd - || return 1
-  }
-fi
-
-if [[ "$SHELL" != "zsh" ]]; then
-  if command -v zsh &>/dev/null; then
-    sudo chsh -s "$(which zsh)" "$USER"
+function get_dotfiles() {
+  if [[ ! -d "$HOME/dotfiles/" ]]; then
+    git clone https://codeberg.org/aocoronel/dotfiles && {
+      cd "$HOME/dotfiles/" || return 1
+      stow -R .
+      cd - || return 1
+    }
   fi
-fi
+}
 
-if [[ -f "/etc/docker/daemon.json" ]]; then
-  add-groups docker
-fi
+function setup_shell() {
+  if [[ "$SHELL" != "zsh" ]]; then
+    if command -v zsh &>/dev/null; then
+      sudo chsh -s "$(which zsh)" "$USER"
+    fi
+  fi
+}
 
-if command -v virtualbox &>/dev/null; then
-  add-groups vboxusers
-fi
+function setup_groups() {
+  if [[ -f "/etc/docker/daemon.json" ]]; then
+    add-groups docker
+  fi
+  if command -v virtualbox &>/dev/null; then
+    add-groups vboxusers
+  fi
+  if command -v gamemoderun &>/dev/null; then
+    add-groups gamemode
+  fi
+  if command -v syncthing &>/dev/null; then
+    sudo systemctl enable "syncthing@$USER.service"
+  fi
+  if command -v virt-manager &>/dev/null; then
+    add-groups libvirt kvm
+    sudo systemctl enable libvirtd.service --now
+    sudo virsh net-autostart default >/dev/null
+  fi
+}
 
-if command -v gamemoderun &>/dev/null; then
-  add-groups gamemode
-fi
+function main() {
+  get_dotfiles
+  setup_files
+  setup_shell
+  setup_groups
+  if [[ -f "/usr/bin/helix" ]]; then
+    command -v hx >/dev/null 2>&1 || sudo ln -s /usr/bin/helix /usr/local/bin/hx
+  fi
+  if ! grep 1 "$HOME/.cache/rebos-group" &>/dev/null; then
+    add-groups networkmanager wheel input dialout video render video && echo 1 >"$HOME/.cache/rebos-group"
+  fi
+}
+
+main

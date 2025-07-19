@@ -2,9 +2,9 @@ add = "go install #:?@latest"
 remove = "rm $GOBIN/#:?"
 upgrade = "go install-update -a"
 
-plural_name = "crates"
+plural_name = "go"
 
-hook_name = "crates"
+hook_name = "go"
 
 [config]
 many_args = true

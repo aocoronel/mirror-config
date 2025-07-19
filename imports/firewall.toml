@@ -1,0 +1,5 @@
+[managers.system]
+items = ["ufw"]
+
+[managers.systemd]
+items = ["ufw"]

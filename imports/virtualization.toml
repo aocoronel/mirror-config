@@ -3,4 +3,5 @@ imports = [
   "virtualization/podman",
   # "virtualization/virt-manager",
   # "virtualization/virtualbox",
+  # "virtualization/wine",
 ]

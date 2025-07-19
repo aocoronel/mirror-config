@@ -1,14 +1,9 @@
 [managers.system]
 items = [
   # "at",
-  # "parted",
   "fuse2",
   "gnome-disk-utility",
-  "gvfs",
-  "gvfs-mtp",
-  "mtpfs",
+  # "parted",
   "scrcpy",
   "seahorse",
-  "udiskie",
-  "udisks2",
 ]

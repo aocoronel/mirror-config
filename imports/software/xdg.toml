@@ -1,7 +1,2 @@
 [managers.system]
-items = [
-  "xdg-desktop-portal",
-  "xdg-desktop-portal-gtk",
-  "xdg-utils",
-  "flatpak-xdg-utils",
-]
+items = ["xdg-desktop-portal", "xdg-desktop-portal-gtk", "xdg-utils"]

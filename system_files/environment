@@ -1,2 +1,0 @@
-GOBIN=$HOME/go/bin/
-EDITOR=nvim

@@ -1,4 +1,4 @@
 imports = [
   # "wm/qtile",
-  "wm/hyprland",
+  # "wm/hyprland",
 ]

@@ -1,66 +1,29 @@
 imports = [
-  "initial_packages",
-  "core_packages",
-  "programming_languages",
-  "hyprland",
-  "proprietary",
-  "sddm_themes",
-  "gpm",
+  "display-manager",
+  "drivers",
+  "firewall",
+  # "flatpak",
+  "lang",
+  "laptop",
+  "network",
+  "services",
+  "software",
+  "themes",
+  "virtualization",
+  "wm",
 ]
 
 [managers.systemd]
 items = []
 
 [managers.system]
-items = [
-  "alacritty",
-  # "borgbackup",
-  # "bottles",
-  # "brave",
-  # "buku",
-  # "ddgr",
-  "evince",
-  # "firefox",
-  # "floorp",
-  # "foot",
-  # "freetube",
-  "gimp",
-  # "gnome-font-viewer",
-  # "gnome-maps",
-  # "kitty",
-  # "libreoffice",
-  # "librewolf",
-  "lynx",
-  # "megacmd",
-  # "mermaid-cli",
-  "mpv",
-  "newsboat",
-  # "nyxt",
-  # "obs-studio",
-  "pandoc",
-  # "qutebrowser",
-  "rclone",
-  "restic",
-  "seahorse",
-  "taskchampion-sync-server",
-  # "ungoogled-chromium",
-  # "vivaldi",
-  # "vlc",
-  # "w3m",
-  # "wine",
-  "zathura",
-  # "zotero",
-  # "foot",
-]
+items = []
 
 [managers.aur]
 items = ["cava", "freetube-bin", "mutt-wizard", "oh-my-posh", "zen-browser-bin"]
 
 [managers.go]
 items = []
-
-[managers.flatpak]
-items = ["io.freetubeapp.FreeTube", "app.zen_browser.zen"]
 
 [managers.cargo]
 items = []

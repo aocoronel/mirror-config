@@ -1,4 +1,2 @@
-imports = ["gpu_drivers/shared"]
-
 [managers.system]
 items = ["xf86-video-amdgpu", "vulkan-radeon", "lib32-vulkan-radeon"]

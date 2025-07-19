@@ -1,2 +1,5 @@
 [managers.system]
 items = ["task", "timew", "taskwarrior-tui"]
+
+[managers.aur]
+items = ["taskchampion-sync-server"]

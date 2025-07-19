@@ -1,6 +1,9 @@
 [managers.system]
 items = [
   "gimp",
-  # "obs-studio"
-  # "shotcut"
+  "mpv",
+  "newsboat",
+  # "obs-studio",
+  # "shotcut",
+  # "vlc"
 ]
