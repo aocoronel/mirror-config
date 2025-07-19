@@ -7,4 +7,4 @@ plural_name = "go"
 hook_name = "go"
 
 [config]
-many_args = true
+many_args = false
