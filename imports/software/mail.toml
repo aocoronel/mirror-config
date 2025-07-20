@@ -1,7 +1,11 @@
 [managers.system]
 items = [
   "isync",
-  "mutt-wizard",
   "neomutt",
   # "thunderbird",
+]
+
+[managers.aur]
+items = [
+  "mutt-wizard",
 ]

@@ -1,2 +1,4 @@
 [managers.system]
-items = ["android-tools", "android-udev-rules"]
+items = ["android-tools",
+# "android-udev-rules"
+]

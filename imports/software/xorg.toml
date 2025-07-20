@@ -1,6 +1,6 @@
 [managers.system]
 items = [
-  "adwaita-qt",
+  # "adwaita-qt", # Not in pacman
   # "clipcat",
   "dconf",
   # "dmenu",

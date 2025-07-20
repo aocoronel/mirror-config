@@ -12,5 +12,5 @@ items = [
   "virt-viewer",
 ]
 
-[managers.systemd]
+[managers.runit]
 items = ["libvirtd"]

@@ -1,5 +1,5 @@
 [managers.system]
 items = ["ufw"]
 
-[managers.systemd]
+[managers.runit]
 items = ["ufw"]

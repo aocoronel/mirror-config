@@ -21,20 +21,19 @@ items = [
   "ffmpeg",
   "figlet",
   "fzf",
-  "gh",
   "git",
   "git-crypt",
   "github-cli",
   "gitleaks",
   "gnupg",
-  "gnutar",
+  # "gnutar", # Not in pacman
   "gocryptfs",
   "gvfs",
   "imagemagick",
-  "jmtpfs",
+  # "jmtpfs", # Not in pacman
   "jq",
   "just",
-  "killall",
+  # "killall", # Not in pacman
   "lazygit",
   "less",
   # "libargon2",
@@ -63,7 +62,7 @@ items = [
   "rclone",
   "restic",
   "ripgrep",
-  "rmlint",
+  # "rmlint", # Not in pacman
   "rsync",
   "sd",
   "sqlite",

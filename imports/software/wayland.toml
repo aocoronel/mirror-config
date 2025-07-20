@@ -12,6 +12,6 @@ items = [
   "swayimg",
   "swww",
   "wf-recorder",
-  "wttrbar",
+  # "wttrbar", # Not in pacman
   "ydotool",
 ]

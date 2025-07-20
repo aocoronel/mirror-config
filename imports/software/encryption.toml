@@ -3,8 +3,8 @@ items = [
   # "gocryptfs"
   "pass",
   "pass-otp",
-  "pass-tomb",
-  "steghide",
-  "tomb",
+  # "pass-tomb", # Not in pacman
+  # "steghide", # Not in pacman
+  # "tomb", # Not in pacman
   "zbar",
 ]

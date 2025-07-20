@@ -1,2 +1,2 @@
 begin = ["system"]
-end = ["systemd"]
+end = ["runit"]

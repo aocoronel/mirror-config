@@ -4,5 +4,5 @@ items = [
   # "network-manager-applet",
 ]
 
-[managers.systemd]
+[managers.runit]
 items = ["NetworkManager"]

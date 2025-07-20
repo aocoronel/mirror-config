@@ -1,7 +1,7 @@
 imports = [
   "software/browser",
   "software/cli",
-  "software/emacs",
+  # "software/emacs",
   "software/encryption",
   "software/fonts",
   "software/lsp",
@@ -17,7 +17,5 @@ imports = [
   "software/task",
   "software/terminal",
   "software/text-editor",
-  "software/wayland",
   "software/xdg",
-  "software/xorg",
 ]

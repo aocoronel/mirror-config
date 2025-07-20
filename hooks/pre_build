@@ -1,5 +1,13 @@
 #!/usr/bin/env bash
 
-# source "$(dirname "$(realpath "$0")")/rebos-api"
+source "$(dirname "$(realpath "$0")")/rebos-api"
 
-# system_files_path="$HOME/.config/rebos/system_files"
+system_files_path="$HOME/.config/rebos/system_files"
+
+if ! command -v paru &>/dev/null; then
+  git clone https://aur.archlinux.org/paru-bin.git
+  cd paru-bin || return 1
+  makepkg -si
+  cd - || return 1
+  rm -rf paru-bin
+fi

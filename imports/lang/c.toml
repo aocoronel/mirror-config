@@ -5,6 +5,6 @@ items = [
   "clang",
   # "cmake",
   "gcc",
-  "gnumake",
+  # "gnumake", # Not in pacman
   "libtool",
 ]

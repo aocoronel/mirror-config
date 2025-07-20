@@ -1,5 +1,5 @@
 [managers.aur]
 items = ["auto-cpufreq"]
 
-[managers.systemd]
+[managers.runit]
 items = ["auto-cpufreq"]

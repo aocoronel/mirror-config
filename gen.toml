@@ -13,7 +13,7 @@ imports = [
   "wm",
 ]
 
-[managers.systemd]
+[managers.runit]
 items = []
 
 [managers.system]

@@ -1,5 +1,5 @@
 [managers.system]
 items = ["ly"]
 
-[managers.systemd]
+[managers.runit]
 items = ["ly"]
