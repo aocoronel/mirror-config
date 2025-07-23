@@ -11,13 +11,13 @@ function add-groups() {
 }
 
 function setup_files() {
+  [[ ! -d "$HOME/.local/share/applications/" ]] && mkdir "$HOME/.local/share/applications"
   ln -sf "$system_files_path/gpg-agent.conf" "$HOME/.gnupg/gpg-agent.conf" || exit 1
   ln -sf "$system_files_path/.gtkrc-2.0" "$HOME/.gtkrc-2.0" || exit 1
   ln -sf "$system_files_path/mimeapps.list" "$HOME/.config/mimeapps.list" || exit 1
   ln -sf "$system_files_path/mimeapps.list" "$HOME/.local/share/applications/mimeapps.list" || exit 1
   ln -sf "$system_files_path/.tmuxprofile" "$HOME/.tmuxprofile" || exit 1
   sed "s|username|$(whoami)|" "$system_files_path/user-dirs.dirs" >"$HOME/.config/user-dirs.dirs"
-  sudo cp "$system_files_path/environment" /etc/environment || exit 1
 }
 
 function get_dotfiles() {
@@ -31,9 +31,9 @@ function get_dotfiles() {
 }
 
 function setup_shell() {
-  if [[ "$SHELL" != "zsh" ]]; then
-    if command -v zsh &>/dev/null; then
-      sudo chsh -s "$(which zsh)" "$USER"
+  if [[ "$SHELL" != "/usr/bin/fish" ]]; then
+    if command -v fish &>/dev/null; then
+      sudo chsh -s "/usr/bin/fish" "$USER"
     fi
   fi
 }
@@ -48,14 +48,14 @@ function setup_groups() {
   if command -v gamemoderun &>/dev/null; then
     add-groups gamemode
   fi
-  if command -v syncthing &>/dev/null; then
-    sudo systemctl enable "syncthing@$USER.service"
-  fi
-  if command -v virt-manager &>/dev/null; then
-    add-groups libvirt kvm
-    sudo systemctl enable libvirtd.service --now
-    sudo virsh net-autostart default >/dev/null
-  fi
+  # if command -v syncthing &>/dev/null; then
+  #   sudo systemctl enable "syncthing@$USER.service"
+  # fi
+  # if command -v virt-manager &>/dev/null; then
+  #   add-groups libvirt kvm
+  #   sudo systemctl enable libvirtd.service --now
+  #   sudo virsh net-autostart default >/dev/null
+  # fi
 }
 
 function main() {

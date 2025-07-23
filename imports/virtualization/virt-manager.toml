@@ -4,6 +4,7 @@ items = [
   "dnsmasq",
   "dosfstools",
   "libvirt",
+  "libvirt-runit",
   "lxc",
   "qemu-full",
   "swtpm",

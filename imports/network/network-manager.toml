@@ -1,7 +1,8 @@
 [managers.system]
 items = [
+  "networkmanager-runit",
   "networkmanager",
-  # "network-manager-applet",
+  # "networkmanager-applet",
 ]
 
 [managers.runit]

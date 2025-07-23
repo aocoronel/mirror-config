@@ -4,7 +4,7 @@ imports = [
   "firewall",
   # "flatpak",
   "lang",
-  "laptop",
+  # "laptop",
   "network",
   "services",
   "software",

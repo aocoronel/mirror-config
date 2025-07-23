@@ -1,0 +1,9 @@
+add = "sudo systemctl enable #:? --now"
+remove = "sudo systemctl disable #:?"
+
+plural_name = "services"
+
+hook_name = "systemd"
+
+[config]
+many_args = false

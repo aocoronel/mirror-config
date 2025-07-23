@@ -1,5 +1,5 @@
-add = "sudo pacman -S #:?"
-remove = "sudo pacman -Rns #:?"
+add = "sudo pacman -S --needed #:?"
+remove = "sudo pacman -R #:?"
 
 plural_name = "systems"
 

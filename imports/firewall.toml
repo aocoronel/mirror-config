@@ -1,5 +1,5 @@
 [managers.system]
-items = ["ufw"]
+items = ["ufw", "ufw-runit"]
 
 [managers.runit]
 items = ["ufw"]

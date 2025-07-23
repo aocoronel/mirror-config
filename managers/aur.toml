@@ -1,4 +1,4 @@
-add = "paru -S #:?"
+add = "paru -S --needed #:?"
 remove = "paru -Rns #:?"
 sync = "paru -Syy"
 upgrade = "paru -Syu"

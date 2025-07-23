@@ -1,5 +1,5 @@
 [managers.system]
-items = ["docker", "docker-compose", "lazydocker"]
+items = ["docker", "docker-compose", "lazydocker", "docker-runit"]
 
 [managers.runit]
 items = ["docker"]

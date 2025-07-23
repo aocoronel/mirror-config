@@ -13,11 +13,11 @@ items = [
   "lm_sensors",
   "meson",
   "pavucontrol",
-  "pinentry-gnome3",
+  # "pinentry-gnome3",
   "playerctl",
   "waybar",
   "wl-clipboard",
-  "wl-clipboard-x11",
+  # "wl-clipboard-x11",
   "wlr-randr",
   "xdg-desktop-portal-hyprland",
   # Extra Hyprland

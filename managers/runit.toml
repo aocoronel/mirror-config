@@ -1,5 +1,5 @@
-add = "ln /etc/runit/sv/#:? /run/runit/service"
-remove = "rm /run/runit/service/#:?"
+add = "sudo ln -sf /etc/runit/sv/#:? /run/runit/service"
+remove = "sudo rm /run/runit/service/#:?"
 
 plural_name = "services"
 

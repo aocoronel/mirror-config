@@ -1,5 +1,5 @@
 [managers.system]
-items = ["ly"]
+items = ["ly", "ly-runit"]
 
 [managers.runit]
 items = ["ly"]

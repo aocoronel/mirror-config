@@ -1,0 +1,10 @@
+imports = ["software/xorg"]
+
+[managers.system]
+items = [
+  "cpio",
+  "dunst",
+  "gsettings-desktop-schemas",
+  "libnotify",
+  "playerctl",
+]
