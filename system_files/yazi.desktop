@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=Yazi File Manager
-Comment=Launch Yazi in Alacritty
-Exec=alacritty -e yazi
-Icon=utilities-terminal
-Terminal=false
-Type=Application
-Categories=System;FileManager;

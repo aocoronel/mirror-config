@@ -8,3 +8,8 @@ items = [
   # "tomb", # Not in pacman
   "zbar",
 ]
+
+[managers.aur]
+items = [
+  "lesspass",
+]

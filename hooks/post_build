@@ -10,16 +10,6 @@ function add-groups() {
   done
 }
 
-function setup_files() {
-  [[ ! -d "$HOME/.local/share/applications/" ]] && mkdir "$HOME/.local/share/applications"
-  ln -sf "$system_files_path/gpg-agent.conf" "$HOME/.gnupg/gpg-agent.conf" || exit 1
-  ln -sf "$system_files_path/.gtkrc-2.0" "$HOME/.gtkrc-2.0" || exit 1
-  ln -sf "$system_files_path/mimeapps.list" "$HOME/.config/mimeapps.list" || exit 1
-  ln -sf "$system_files_path/mimeapps.list" "$HOME/.local/share/applications/mimeapps.list" || exit 1
-  ln -sf "$system_files_path/.tmuxprofile" "$HOME/.tmuxprofile" || exit 1
-  sed "s|username|$(whoami)|" "$system_files_path/user-dirs.dirs" >"$HOME/.config/user-dirs.dirs"
-}
-
 function get_dotfiles() {
   if [[ ! -d "$HOME/dotfiles/" ]]; then
     git clone https://codeberg.org/aocoronel/dotfiles && {
@@ -60,7 +50,6 @@ function setup_groups() {
 
 function main() {
   get_dotfiles
-  setup_files
   setup_shell
   setup_groups
   if [[ -f "/usr/bin/helix" ]]; then

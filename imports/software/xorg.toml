@@ -1,9 +1,7 @@
 [managers.system]
 items = [
-  # "adwaita-qt", # Not in pacman
-  # "clipcat",
   "dconf",
-  # "dmenu",
+  "dmenu",
   "dunst",
   "feh",
   "flameshot",
@@ -17,4 +15,5 @@ items = [
   "xclip",
   "xdotool",
   "zenity",
+  # "adwaita-qt", # Not in pacman
 ]
