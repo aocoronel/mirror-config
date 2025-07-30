@@ -1,4 +1,0 @@
-imports = ["services/gamemode"]
-
-[managers.system]
-items = ["steam"]

@@ -1,9 +1,0 @@
-add = "sudo pacman -S --needed #:?"
-remove = "sudo pacman -R #:?"
-
-plural_name = "systems"
-
-hook_name = "system"
-
-[config]
-many_args = true

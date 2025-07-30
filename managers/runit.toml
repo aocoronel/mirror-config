@@ -1,9 +1,0 @@
-add = "sudo ln -sf /etc/runit/sv/#:? /run/runit/service"
-remove = "sudo rm /run/runit/service/#:?"
-
-plural_name = "services"
-
-hook_name = "runit"
-
-[config]
-many_args = false

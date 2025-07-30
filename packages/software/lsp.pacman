@@ -1,0 +1,14 @@
+# alejandra # Not in pacman
+bash-language-server
+# clang-tools
+# docker-compose-language-service
+# dockerfile-language-server-nodejs
+harper
+# java-language-server
+# kotlin-language-server
+lua-language-server
+# markdown-oxide # Not in pacman
+marksman
+# sqls
+# typescript-language-server
+# yaml-language-server

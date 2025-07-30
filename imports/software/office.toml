@@ -1,7 +1,0 @@
-[managers.system]
-items = [
-  # "evince",
-  "libreoffice-fresh",
-  "zathura",
-  # "zotero"
-]

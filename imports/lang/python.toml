@@ -1,6 +1,0 @@
-imports = [
-  "lang/python/packages"
-]
-
-[managers.system]
-items = ["imath", "pystring", "python"]

@@ -1,7 +1,0 @@
-imports = ["software/xorg"]
-
-[managers.system]
-items = ["kitty", "qtile", "python-psutil"]
-
-[managers.aur]
-items = ["qtile-extras"]

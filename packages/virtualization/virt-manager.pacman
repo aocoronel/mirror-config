@@ -1,0 +1,10 @@
+bridge-utils
+dnsmasq
+dosfstools
+libvirt
+libvirt-runit
+lxc
+qemu-full
+swtpm
+virt-manager
+virt-viewer

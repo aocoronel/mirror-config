@@ -1,9 +1,0 @@
-[managers.system]
-items = [
-  # "at",
-  "fuse2",
-  "gnome-disk-utility",
-  # "parted",
-  "scrcpy",
-  "seahorse",
-]

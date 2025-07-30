@@ -1,9 +1,0 @@
-[managers.system]
-items = [
-  "networkmanager-runit",
-  "networkmanager",
-  # "networkmanager-applet",
-]
-
-[managers.runit]
-items = ["NetworkManager"]

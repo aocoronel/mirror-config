@@ -1,0 +1,84 @@
+# atomicparsley
+# bc
+# borgbackup
+# bpytop
+# expect
+# gnutar # Not in pacman
+# jmtpfs # Not in pacman
+# killall # Not in pacman
+# libargon2
+# navi
+# odt2txt
+# opendoas
+# pulseaudio
+# pwgen
+# rmlint # Not in pacman
+age
+bash-completion
+bat
+brightnessctl
+btop
+cava
+cmatrix
+cmus
+cryptsetup
+curl
+direnv
+eza
+fastfetch
+fd
+ffmpeg
+figlet
+fzf
+git
+git-crypt
+github-cli
+gitleaks
+gnupg
+gocryptfs
+gvfs
+imagemagick
+jq
+just
+lazygit
+less
+lsof
+man
+man-db
+moreutils
+mpv
+mtpfs
+mupdf
+mupdf-tools
+ncdu
+newsboat
+nmap
+oath-toolkit
+onefetch
+openssh
+openssl
+pandoc-bin
+parallel
+playerctl
+ranger
+rclone
+restic
+ripgrep
+rsync
+sd
+sqlite
+srm
+stow
+tldr
+tmux
+tmuxp
+tree
+ueberzugpp
+ufw
+unzip
+wget
+which
+yazi
+yt-dlp
+zip
+zoxide

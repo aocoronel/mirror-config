@@ -1,5 +1,0 @@
-imports = [
-  "wm/dwm",
-  # "wm/hyprland",
-  # "wm/qtile",
-]

@@ -1,6 +1,0 @@
-imports = [
-  # "drivers/amd",
-  "drivers/intel",
-  # "drivers/linux",
-  "drivers/shared",
-]

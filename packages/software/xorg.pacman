@@ -1,0 +1,18 @@
+# adwaita-qt # Not in pacman
+dconf
+dmenu
+dunst
+feh
+flameshot
+libnotify
+nsxiv
+picom
+redshift
+sxhkd
+xclip
+xdotool
+xorg-server
+xorg-xinit
+xorg-xrandr
+xsel
+zenity

@@ -1,5 +1,0 @@
-[managers.aur]
-items = ["auto-cpufreq"]
-
-[managers.systemd]
-items = ["auto-cpufreq"]
