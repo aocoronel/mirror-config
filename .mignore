@@ -1,1 +1,10 @@
-amd.pacman
+amd*
+bluetooth*
+docker*
+dwm*
+flatpak*
+qtile*
+steam*
+virt*
+wine*
+xorg*
