@@ -2,4 +2,6 @@ pipewire
 pipewire-audio
 pipewire-alsa
 pipewire-pulse
+pipewire-jack
+libpulse
 wireplumber

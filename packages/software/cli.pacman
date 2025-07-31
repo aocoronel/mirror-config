@@ -57,7 +57,7 @@ oath-toolkit
 onefetch
 openssh
 openssl
-pandoc-bin
+# pandoc-bin
 parallel
 playerctl
 ranger
@@ -67,7 +67,7 @@ ripgrep
 rsync
 sd
 sqlite
-srm
+# srm
 stow
 tldr
 tmux
