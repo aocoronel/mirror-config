@@ -1,9 +1,12 @@
 amd*
+artix*
 bluetooth*
+cli.aur
 docker*
 dwm*
 flatpak*
 qtile*
+runit*
 steam*
 virt*
 wine*
