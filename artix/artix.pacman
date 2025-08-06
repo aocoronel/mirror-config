@@ -1,9 +1,0 @@
-artix-archlinux-support
-artix-keyring
-base
-base-devel
-efibootmgr
-elogind-runit
-grub
-lvm2
-pacman-contrib

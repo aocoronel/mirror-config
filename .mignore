@@ -6,9 +6,10 @@ docker*
 dwm*
 flatpak*
 qtile*
+ruby*
 runit*
 steam*
+stubby*
 virt*
 wine*
 xorg*
-stubby.pacman
