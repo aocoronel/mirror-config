@@ -1,25 +1,24 @@
+# age
 # atomicparsley
 # bc
 # borgbackup
 # bpytop
+# cava
+# cmatrix
 # expect
-# gnutar # Not in pacman
-# jmtpfs # Not in pacman
-# killall # Not in pacman
+# figlet
 # libargon2
 # navi
 # odt2txt
 # opendoas
 # pulseaudio
 # pwgen
-# rmlint # Not in pacman
-age
+# srm
+# tldr
 bash-completion
 bat
 brightnessctl
 btop
-cava
-cmatrix
 cmus
 cryptsetup
 curl
@@ -28,14 +27,12 @@ eza
 fastfetch
 fd
 ffmpeg
-figlet
 fzf
 git
 git-crypt
 github-cli
 gitleaks
 gnupg
-gocryptfs
 gvfs
 imagemagick
 jq
@@ -67,9 +64,8 @@ ripgrep
 rsync
 sd
 sqlite
-# srm
 stow
-tldr
+tar
 tmux
 tmuxp
 tree

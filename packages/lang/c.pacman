@@ -1,5 +1,3 @@
-# cmake
-# gnumake # Not in pacman
 autoconf
 automake
 clang
