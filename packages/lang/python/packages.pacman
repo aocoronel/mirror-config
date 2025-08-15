@@ -1,2 +1,7 @@
 python-beautifulsoup4
+python-dateutil
+python-feedgen
+python-lxml
 python-mutagen
+python-pytz
+python-six

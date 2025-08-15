@@ -57,7 +57,7 @@ oath-toolkit
 onefetch
 openssh
 openssl
-# pandoc-bin
+pandoc-cli
 parallel
 playerctl
 ranger

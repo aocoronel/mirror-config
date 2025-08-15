@@ -1,7 +1,4 @@
-# emacs
-# emacs-lsp-booster
-# ffmpegthumbnailer
-# graphviz
-# mediainfo
-# poppler_utils
-# vips
+emacs
+ffmpegthumbnailer
+graphviz
+mediainfo
