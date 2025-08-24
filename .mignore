@@ -5,6 +5,7 @@ docker*
 dwm*
 emacs*
 gamemode*
+mtp.aur
 qtile*
 ruby*
 steam*
@@ -12,3 +13,4 @@ stubby*
 virt*
 wine*
 xorg*
+go*
