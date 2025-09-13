@@ -30,6 +30,7 @@ ffmpeg
 fzf
 git
 git-crypt
+git-filter-repo
 github-cli
 gitleaks
 gnupg

@@ -3,4 +3,6 @@ automake
 clang
 gcc
 libtool
+lldb
 make
+valgrind
