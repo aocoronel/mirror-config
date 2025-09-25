@@ -1,4 +1,5 @@
 bash-language-server
+shfmt
 clangd
 marksman
 prettier
