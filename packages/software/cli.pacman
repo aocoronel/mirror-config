@@ -16,20 +16,19 @@
 # srm
 # tldr
 bash-completion
-bat
-brightnessctl
+# bat
+# brightnessctl
 btop
 cmus
-cryptsetup
 curl
-direnv
+# direnv
 eza
 fastfetch
 fd
 ffmpeg
 fzf
 git
-git-crypt
+# git-crypt
 git-filter-repo
 github-cli
 gitleaks
@@ -41,29 +40,28 @@ just
 lazygit
 less
 lsof
-man
-man-db
-moreutils
+# man
+# man-db
+# moreutils
 mpv
 mtpfs
-mupdf
-mupdf-tools
-ncdu
-newsboat
-nmap
+# mupdf
+# mupdf-tools
+# ncdu
+# nmap
 oath-toolkit
 onefetch
 openssh
 openssl
-pandoc-cli
-parallel
+# pandoc-cli
+# parallel
 playerctl
 ranger
 rclone
 restic
 ripgrep
 rsync
-sd
+# sd
 sqlite
 stow
 tar

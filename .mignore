@@ -13,3 +13,7 @@ stubby*
 virt*
 wine*
 xorg*
+python/packages.pacman
+go*
+gtk*
+zig*

@@ -1,4 +1,5 @@
 archlinux-keyring
+cryptsetup
 base
 base-devel
 efibootmgr
