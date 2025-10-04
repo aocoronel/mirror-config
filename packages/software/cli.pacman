@@ -37,7 +37,8 @@ gvfs
 imagemagick
 jq
 just
-lazygit
+# lazygit
+tig
 less
 lsof
 # man
