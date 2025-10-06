@@ -1,8 +1,8 @@
-autoconf
+# autoconf
 automake
 clang
 gcc
 libtool
-lldb
+# lldb
 make
-valgrind
+# valgrind
