@@ -8,7 +8,7 @@
 # expect
 # figlet
 # libargon2
-# navi
+navi
 # odt2txt
 # opendoas
 # pulseaudio
@@ -16,7 +16,7 @@
 # srm
 # tldr
 bash-completion
-# bat
+bat
 # brightnessctl
 btop
 cmus
@@ -37,13 +37,12 @@ gvfs
 imagemagick
 jq
 just
-# lazygit
-tig
+lazygit
+# tig
 less
 lsof
-# man
-# man-db
-# moreutils
+mandoc
+moreutils
 mpv
 mtpfs
 # mupdf
