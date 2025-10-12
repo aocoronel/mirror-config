@@ -10,7 +10,10 @@ qtile*
 ruby*
 steam*
 stubby*
-virt*
+docker*
+virt-*
+virtualbox*
+wine*
 wine*
 xorg*
 python/packages.pacman
